@@ -1,0 +1,23 @@
+{
+  "name": "kitty",
+  "version": "1.0.0",
+  "description": "A simple n' lightweight web framework",
+  "type": "module",
+
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
+
+  "scripts": {
+    "build": "tsc"
+  },
+
+  "author": "ThinLiquid",
+  "license": "MIT",
+
+  "dependencies": {
+    "marked": "^13.0.2"
+  }
+}
