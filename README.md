@@ -1,20 +1,20 @@
-# kittylib
+# kitty
 > An simple n' lightweight web framework
 
 ## Usage
 Install the package:
 ```
-npm i kittylib -D
+npm i @thnlqd/kitty -D
 ```
 *or* use a CDN:
 ```js
-import Kitty from 'https://cdn.skypack.dev/kittylib';
+import Kitty from 'https://cdn.skypack.dev/@thnlqd/kitty';
 ```
 
 ## Building
 Clone the repo:
 ```
-git clone https://github.com/ThinLiquid/kittylib && cd kitty
+git clone https://github.com/ThinLiquid/kitty && cd kitty
 ```
 Install dependencies and build:
 ```
