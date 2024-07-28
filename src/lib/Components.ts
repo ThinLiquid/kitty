@@ -128,6 +128,31 @@ export class TextArea extends BaseInput {
   }
 }
 
+export class Select extends Kitty {
+  constructor (attrs: KittyAttributes = {}) {
+    super('select', attrs)
+  }
+
+  static render (attrs: KittyAttributes = {}): Select {
+    return new Select(attrs)
+  }
+
+  option (text: string, value: string): this {
+    const option = new Kitty('option', { value }).text(text)
+    this.append(option)
+    return this
+  }
+
+  value(value: string): this {
+    this.element.setAttribute('value', value)
+    return this
+  }
+
+  getValue (): string {
+    return (this.element as HTMLSelectElement).value
+  }
+}
+
 export class Image extends Kitty {
   constructor (attrs: KittyAttributes = {}) {
     super('img', attrs)
