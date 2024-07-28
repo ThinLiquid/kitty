@@ -1,14 +1,14 @@
-# kitty
+# kittylib
 > An simple n' lightweight web framework
 
 ## Usage
 Install the package:
 ```
-npm i @thnlqd/kitty -D
+npm i kittylib -D
 ```
 *or* use a CDN:
 ```js
-import Kitty from 'https://cdn.skypack.dev/@thnlqd/kitty';
+import Kitty from 'https://cdn.skypack.dev/kittylib';
 ```
 
 ## Building

@@ -1,6 +1,6 @@
 {
-  "name": "@thnlqd/kitty",
-  "version": "1.0.0",
+  "name": "kittylib",
+  "version": "1.0.0-beta",
   "description": "A simple n' lightweight web framework",
   "type": "module",
 
@@ -9,9 +9,10 @@
   "files": [
     "/dist"
   ],
-  
+
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "publish": "npm run build && npm publish --access=public"
   },
   "author": "ThinLiquid",
   "license": "MIT",
