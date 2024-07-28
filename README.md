@@ -14,7 +14,7 @@ import Kitty from 'https://cdn.skypack.dev/kittylib';
 ## Building
 Clone the repo:
 ```
-git clone https://github.com/ThinLiquid/kitty && cd kitty
+git clone https://github.com/ThinLiquid/kittylib && cd kitty
 ```
 Install dependencies and build:
 ```
