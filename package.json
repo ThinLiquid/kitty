@@ -1,6 +1,6 @@
 {
   "name": "@thnlqd/kitty",
-  "version": "1.0.4-beta",
+  "version": "1.0.5-beta",
   "description": "A simple n' lightweight web framework",
   "type": "module",
 
