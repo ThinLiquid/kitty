@@ -1,6 +1,8 @@
 # kitty
 > An simple n' lightweight web framework
 
+<kbd>[Docs](https://github.com/ThinLiquid/kitty/blob/main/DOCS.md)</kbd>
+
 ## Usage
 Install the package:
 ```
@@ -10,8 +12,6 @@ npm i @thnlqd/kitty -D
 ```js
 import Kitty from 'https://cdn.skypack.dev/@thnlqd/kitty';
 ```
-
-> [Read the docs here!](https://github.com/ThinLiquid/kitty/blob/main/DOCS.md)
 
 ## Building
 Clone the repo:
