@@ -3,7 +3,7 @@ import { marked } from 'marked'
 export default class Kitty {
   element: HTMLElement
 
-  constructor (tagName: string, attrs: Record<string, string>) {
+  constructor (tagName: string, attrs: Record<string, string> = {}) {
     this.element = document.createElement(tagName)
 
     for (const key in attrs) {
