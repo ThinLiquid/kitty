@@ -22,6 +22,30 @@ Represents a Kitty element.
 constructor (tagName: string, attrs: Record<string, string> = {})
 ```
 
+#### Static Methods
+
+##### `static createLetters (letters: string, attrs: Record<string, string> = {}): Kitty[]`
+Creates multiple `span` elements for each letter.
+###### Usage
+```js
+const div = Kitty.create('div')
+  .to(document.body)
+
+// Appending letters with an ID
+div.append(
+  ...Kitty.createLetters('hello!', { id: 'letter-{index}' })
+)
+```
+
+
+##### `static create (tagName: string, attrs: Record<string, string> = {}): Kitty`
+Creates a `Kitty` element.
+###### Usage
+```js
+const div = Kitty.create('div')
+  .to(document.body)
+```
+
 #### Methods
 
 ##### `to (parent: HTMLElement | Kitty): Kitty`
@@ -123,4 +147,60 @@ const div = Kitty.create('div')
 
 // Setting markdown
 div.md('**Hello world!**')
+```
+
+
+##### `class (className: string): Kitty`
+Adds a class to the current `Kitty` element.
+###### Usage
+```js
+const div = Kitty.create('div')
+  .to(document.body)
+
+// Adding the class
+div.class('kitty')
+```
+
+
+##### `classOff (className: string): Kitty`
+Removes a class from the current `Kitty` element.
+###### Usage
+```js
+const div = Kitty.create('div')
+  .class('kitty')
+  .to(document.body)
+
+// Removing the class
+div.classOff('kitty')
+```
+
+
+##### `style (style: Partial<CSSStyleDeclaration>): Kitty`
+Adds styles to the current `Kitty` element.
+###### Usage
+```js
+const div = Kitty.create('div')
+  .text('hi')
+  .to(document.body)
+
+// Adding the styles
+div.style({
+  color: 'red',
+  background: 'black'
+})
+```
+
+
+##### `on (event: string, listener: (e: any) => any | EventListenerObject): Kitty`
+Adds an event listener to the current `Kitty` element.
+###### Usage
+```js
+const btn = Kitty.create('button')
+  .text('click me')
+  .to(document.body)
+
+// Adding the event listener
+btn.on('click', () => {
+  alert('hi')
+})
 ```
