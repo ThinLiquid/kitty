@@ -11,6 +11,8 @@ npm i @thnlqd/kitty -D
 import Kitty from 'https://cdn.skypack.dev/@thnlqd/kitty';
 ```
 
+> [Read the docs here!](https://github.com/ThinLiquid/kitty/blob/main/DOCS.md)
+
 ## Building
 Clone the repo:
 ```
